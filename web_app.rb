@@ -6,7 +6,7 @@ class MyApp < Sinatra::Base
     register Sinatra::Reloader
   end
   get "/taco" do
-     "the cake is still a lie"
+     "the cake really is still a lie"
   end
 
   get "/" do
