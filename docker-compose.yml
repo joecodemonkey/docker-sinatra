@@ -1,0 +1,19 @@
+version: '3'
+services:
+   web:
+      build:
+         context: .
+         dockerfile: Dockerfile.dev 
+      ports:
+         - "9292:9292"
+      volumes:
+         - .:/app
+   test:
+      tty: true
+      build:
+         context: .
+         dockerfile: Dockerfile_tdd.dev
+      volumes:
+         - .:/app
+      #command: [ "rerun", "-cx", "rspec" ]
+ #     command: [ "bundle", "exec", "rerun", "-cx", "rspec" ]

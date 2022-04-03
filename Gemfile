@@ -1,0 +1,10 @@
+source 'http://rubygems.org'
+
+gem 'puma'
+gem 'sinatra'
+gem 'rack'
+gem 'thin'
+gem 'rspec'
+gem 'rack-test'
+gem 'sinatra-contrib'
+gem 'rerun'
