@@ -24,6 +24,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the stack
-        run: docker build -t docker_sinatra .
+      run: docker build -t docker_sinatra .
     - name: Test
-        run: docker run docker_sinatra bundle exec rspec
+      run: docker run docker_sinatra bundle exec rspec
