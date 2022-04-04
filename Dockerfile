@@ -7,7 +7,7 @@ RUN apk update && apk upgrade && apk add build-base gcc libstdc++ libressl
 
 COPY Gemfile .
 COPY Gemfile.lock .
-RUN bundle install
+RUN bundle install --jobs=4
 
 COPY . .
 #CMD ["rackup"]
