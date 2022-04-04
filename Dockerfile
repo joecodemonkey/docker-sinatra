@@ -11,4 +11,4 @@ RUN bundle install
 
 COPY . .
 #CMD ["rackup"]
-CMD ["bundle", "exec", "rerun", "-cx", "rspec"]
+#CMD ["bundle", "exec", "rackup", "--host", "0.0.0.0"]
